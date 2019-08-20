@@ -1,0 +1,80 @@
+<!--pages/mine/mine.wxml-->
+<view class='mine'>
+  <view class='content'>
+    <view class='portrait'>
+      <view class='ctrl'>
+        <icon class='iconfont icon-shezhicopy'></icon>
+        <icon class='iconfont icon-xinxi'></icon>
+      </view>
+      <view class='img'>
+        <image src='../image/1.jpg'/>
+        <text class='name'>JZR9700</text>
+      </view>
+    </view>
+    <view class='indent'>
+      <view class='indent_all' bindtap='goIndent'>
+        <view class='left'>
+          <icon class='iconfont icon-dingdan'></icon>
+          <text>我的订单</text>
+        </view>
+        <view class='right'>
+          <text>查看全部订单</text>
+          <icon class='iconfont icon-icon'></icon>
+        </view>
+      </view>
+      <view class='menu'>
+        <view class='menuCon'>
+          <view class='item'>
+            <icon class='iconfont icon-daifukuan'></icon>
+            <text>待付款</text>
+          </view>
+          <view class='item'>
+            <icon class='iconfont icon-daifenxiang'></icon>
+            <text>待分享</text>
+          </view>
+          <view class='item'>
+            <icon class='iconfont icon-daifahuo'></icon>
+            <text>待发货</text>
+          </view>
+          <view class='item'>
+            <icon class='iconfont icon-shoucangtubiao-'></icon>
+            <text>待收货</text>
+          </view><view class='item'>
+            <icon class='iconfont icon-daipingjia'></icon>
+            <text>待评价</text>
+          </view>
+        </view>
+      </view>
+      <view class='list'>
+        <view class='list_item' bindtap='goOffer'>
+          <view>
+            <icon class='iconfont icon-youhuiquan1'></icon>
+            <text>优惠券</text>
+          </view>
+          <icon class='iconfont icon-icon'></icon>
+        </view>
+        <view class='list_item' bindtap='goCollection'>
+          <view>
+            <icon class='iconfont icon-shangpinshoucang'></icon>
+            <text>商品收藏</text>
+          </view>
+          <icon class='iconfont icon-icon'></icon>
+        </view>
+        <view class='list_item' bindtap='goBrowsing'>
+          <view>
+            <icon class='iconfont icon-lishiliulan'></icon>
+            <text>历史浏览</text>
+          </view>
+          <icon class='iconfont icon-icon'></icon>
+        </view>
+        <view class='list_item' bindtap='goRefund'>
+          <view>
+            <icon class='iconfont icon-tuikuan'></icon>
+            <text>退款售后</text>
+          </view>
+          <icon class='iconfont icon-icon'></icon>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

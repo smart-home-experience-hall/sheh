@@ -1,0 +1,115 @@
+<!-- 订单 -->
+<view class='order'>
+  <!-- 设置收货地址 -->
+  <view class='order-header'>
+    <van-icon class='location' name="location" color='#248756'/>
+    <text>请选择收货地址</text>
+    <van-icon class="arrow" name="arrow" />
+  </view>
+  <!-- 彩条 -->
+  <view class='Colorbar'>
+    <image src='../image/Colorbar.png' style="width: 100%; height: 4rpx;"></image>
+  </view>
+  <view class='order-content'>
+    <!-- 商品详情 -->
+    <view class='order-item' wx:for="{{data}}" wx:key="{{index}}" data-index="{{index}}">
+      <view class='ig'>
+        <image src='{{item.image_url}}'></image>
+      </view>
+      <view class='order-item-content'>
+        <text class='goods_name'>{{item.goods_name}}</text>
+        <text class='short_name'>{{item.short_name}}</text>
+        <view class='count'>
+          <text class='Piece'>共{{item.count}}件</text>
+          <text class='unitPrice'>￥{{item.market_price}}</text>
+        </view>
+      </view>
+    </view>
+    <!-- 优惠券 -->
+    <view class='Coupon'>
+      <view class='Coupon-text'>
+        <view class='left'>
+          <text>优惠</text>
+        </view>
+        <view class='right'>
+          <text>0{{}}张可用</text>
+          <van-icon class='arrow' name="arrow" size="24rpx"/>
+        </view>
+      </view>
+    </view>
+    <view class='price-box'>
+      <!-- 商品总额 -->
+      <view class='price'>
+        <text class='text'>商品总额</text>
+        <text class='TotalCost'>￥{{TotalCost}}</text>
+      </view>
+      <!-- 运费 -->
+      <view class='Freight'>
+        <text class='text'>运费</text>
+        <text class='FreightPrice'>￥{{}}0</text>
+      </view>
+    </view>
+    <!-- 留言 -->
+    <view class='leaveComments'>
+      <text class='text'>留言</text>
+      <text class='content'>给卖家留言</text>
+    </view>
+    <!-- 支付 -->
+    <view class='Pay'>
+      <view class='wx'>
+        <view class='left'>
+          <icon class='iconfont icon-umidd16'></icon>
+          <text>微信支付</text>
+        </view>
+        <view class='right'>
+          <icon class='iconfont icon-duihao'></icon>
+        </view>
+      </view>
+      <view class='wxFriend'>
+        <view class='left'>
+          <icon class='iconfont icon-haoyouzhifu'></icon>
+          <text>找微信好友支付</text>
+        </view>
+        <view class='right'>
+          <icon class='iconfont'></icon>
+        </view>
+      </view>
+    </view>
+  </view>
+  <!-- 购物车 -->
+  <view class='shopping'>
+    <view class='shoppingBottom'>
+      <view class='left'>
+        <text class='TotalCost'>应付款：</text>
+        <text class='red'>￥{{TotalCost}}</text>
+      </view>
+      <view class='right'>
+        <button class='Settlement' bindtap="Settlement" open-type="getUserInfo" lang="zh_CN" 
+  bindgetuserinfo="onGotUserInfo">提交订单</button>
+      </view>
+    </view>
+  </view>
+  <!-- 模态框 -->
+  <van-popup show="{{ show }}" bind:close="onClose"></van-popup>
+  <van-popup show="{{ show }}" overlay="{{ false }}" bind:close="onClose">
+    <view class='top' style="display: flex; align-items: center; height: 102rpx; border-bottom: 2rpx solid #ddd;">
+      <van-icon name="cross" style="margin-left: 31rpx; color: #ddd;" />
+      <image src='../image/Avatar.png' style="width: 55rpx; height: 55rpx; margin-left: 19rpx;"></image>
+      <text style="margin-left: 11rpx; font-size: 34rpx;">确认支付密码</text>
+    </view>
+    <view class='bottom'>
+      <text style="display: block; text-align: center; font-size: 26rpx; margin-top: 28rpx;">{{name}}</text>
+      <view style="text-align: center;">
+        <text style="font-size: 34rpx; text-align: top;">￥</text>
+        <text style="font-size: 54rpx;">{{TotalCost}}</text>
+      </view>
+      <view class='card' style="display: flex; align-items: center;">
+        <image src='../image/card.png' style="width: 50rpx; height: 50rpx; margin-left: 60rpx;"></image>
+        <text style="flex: 1; font-size: 24rpx; margin-left: 30rpx;">工商银行储蓄卡 （****）</text>
+        <van-icon name="arrow" style="float: right; margin-right: 14rpx; font-szie: 24rpx; color: #ddd;"/>
+      </view>
+      <button bindtap="confirm" style="width: 300rpx; height: 90rpx; background: #e01616; border-radius: 10rpx; font-size: 34rpx; color: #fff; margin-top: 50rpx;">确认支付</button>
+    </view>
+  </van-popup>
+</view>
+<van-dialog id="van-dialog" />

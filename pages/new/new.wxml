@@ -1,0 +1,14 @@
+<!--pages/new/new.wxml-->
+ <view class="new">
+  <view class="new_bg">
+    <image src="https://images.unsplash.com/photo-1551334787-21e6bd3ab135?w=640"></image>
+  </view>
+  <view class="new_list"> 
+    <view class="lis" wx:for="{{dataList}}" wx:key="{{index}}">
+      <image src="{{item.hd_thumb_url}}"></image>
+      <view class="new_text1">{{item.short_name}}</view>
+      <view class="new_text1 new_text_2">{{item.goods_name}}</view>
+      <view class="new_text1 new_text_3">￥2132</view>
+    </view>
+  </view>
+ </view>

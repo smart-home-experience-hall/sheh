@@ -1,0 +1,263 @@
+/* 购物车 */
+
+.shop {
+  width: 20rem;
+  height: 100vh;
+}
+
+/* 购物车包裹 */
+
+.shop-box {
+  width: 100%;
+  padding-bottom: 117rpx;
+  overflow: hidden;
+}
+
+/* 空购物车 */
+
+.shop-empty {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+/* 图片 */
+
+image {
+  width: 284rpx;
+  height: 170rpx;
+  margin-top: 375rpx;
+  margin-left: 203rpx;
+  margin-right: 256rpx;
+  margin-bottom: 49rpx;
+}
+
+/* 提示文本*/
+
+.empty {
+  width: 100%;
+  font-size: 30rpx;
+  color: #999;
+}
+
+/* 去逛逛按钮 */
+
+.btn {
+  width: 202rpx;
+  height: 78rpx;
+  line-height: 78rpx;
+  margin-top: 58rpx;
+  background-color: #278c58;
+  border-radius: 14rpx;
+  font-size: 26rpx;
+  color: #fff;
+}
+
+/* 有值购物车 */
+
+.shop-Valued {
+  width: 100%;
+  height: 100%;
+  padding-bottom: 40rpx;
+  background: #f7f7f7;
+}
+
+/* 每一个商品 */
+
+.shop-item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 20rpx;
+  padding: 57rpx 24rpx 52rpx 24rpx;
+  box-shadow: 0 1rpx 2rpx 0 raba(0, 0, 0, 0.06) inset rgba(225, 228, 228, 0.35);
+  box-sizing: border-box;
+  background: #fff;
+}
+
+/* 商品是否选中 */
+
+.iconfont {
+  font-size: 48rpx;
+  color: #278c58;
+}
+
+/* 商品图片 */
+
+image {
+  display: inline-block;
+  width: 180rpx;
+  height: 180rpx;
+  border-radius: 5rpx;
+  margin-left: 33rpx;
+  margin-right: 29rpx;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* 商品详细信息 */
+
+.item-content {
+  flex: 1;
+  height: 180rpx;
+  font-size: 34rpx;
+  color: #333;
+  overflow: hidden;
+}
+
+/* 商品名称和颜色共同样式 */
+
+.goods_name, .short_name {
+  display: block;
+  width: 200rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* 商品名称 */
+
+.goods_name {
+  margin-bottom: 21rpx;
+}
+
+/* 商品颜色 */
+
+.short_name {
+  margin-bottom: 48rpx;
+  font-size: 28rpx;
+  color: #afafaf;
+}
+
+/* 商品价格 */
+
+.market_price {
+  display: block;
+  font-size: 26rpx;
+  color: #df0000;
+}
+
+/* 商品数量 */
+
+.Products {
+  position: absolute;
+  right: 24rpx;
+  bottom: 46rpx;
+  width: 160rpx;
+  height: 32rpx;
+  background: #fdd;
+}
+
+.number {
+  display: flex;
+  height: 100%;
+  font-size: 24rpx;
+  align-items: center;
+  text-align: center;
+}
+
+.number .add, .number .remove {
+  width: 46rpx;
+  height: 32rpx;
+  background: #fffdfe;
+  border-radius: 4rpx 1rpx 1rpx 4rpx;
+  border: 1rpx solid #e7e7e7;
+}
+
+.number input {
+  flex: 1;
+  height: 32rpx;
+  min-height: 32rpx;
+  line-height: 32rpx;
+  border: 1rpx solid #e7e7e7;
+  border-left: 0;
+  border-right: 0;
+  background: #fffdfe;
+}
+
+/* 删除商品 */
+
+.delete {
+  position: absolute;
+  right: 24rpx;
+  top: 67rpx;
+  display: flex;
+  flex-direction: column;
+  width: 100rpx;
+  height: 180rpx;
+  background: #f7f7f7;
+  border-radius: 10rpx;
+}
+
+.delete .iconfont {
+  font-size: 43rpx;
+  color: #ddd;
+  padding: 48rpx 25rpx 0 31rpx;
+}
+
+.delete .text {
+  font-size: 28rpx;
+  text-align: center;
+  margin-top: 21rpx;
+}
+
+/* 有值购物车 */
+
+/* 求总数量和总价格 */
+
+.shopping {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 117rpx;
+  background: #fff;
+  box-shadow: 1rpx 2rpx 2rpx 1rpx #ddd;
+  z-index: 100;
+}
+
+.shopping .shoppingBottom {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  line-height: 117rpx;
+}
+
+/* 全选按钮 */
+
+.shoppingLeft .iconfont {
+  margin-left: 24rpx;
+  margin-right: 32rpx;
+}
+
+.shoppingLeft .text {
+  font-size: 30rpx;
+}
+
+.shoppingRight {
+  display: flex;
+  align-content: center;
+}
+
+.shoppingRight .TotalCost {
+  font-size: 36rpx;
+  color: #e01616;
+  margin-right: 23rpx;
+}
+
+.shoppingRight .Settlement {
+  width: 150rpx;
+  height: 70rpx;
+  line-height: 70rpx;
+  background: #dc3025;
+  color: #fff;
+  margin-right: 27rpx;
+  margin-top: 20rpx;
+  border-radius: 12rpx;
+  box-shadow: 1rpx 4rpx 12rpx 1rpx rgba(164, 215, 139, 0.29);
+  font-size: 30rpx;
+}
+
+/* 有值购物车 */

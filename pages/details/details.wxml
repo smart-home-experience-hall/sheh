@@ -1,0 +1,232 @@
+<view class="del">
+<view class="details">
+  <!-- 头部开始 -->
+  <view class="details-header">
+    <image></image>
+    <view class="details-header-icon">
+      <icon class="iconfont icon-fanhui" bindtap='goblack'></icon>
+      <icon class="iconfont icon-gouwuche"></icon>
+      <icon class="iconfont icon-sangedian"></icon>
+      <text>0</text>
+    </view>
+    <view class="details-header-text">
+      <text>外观</text>
+      <text>图片</text>
+    </view>
+  </view>
+  <!-- 头部结束 -->
+
+  <!-- 分享开始 -->
+  <view class='details-share'>
+    <view class="details-share-title">
+        <view class="details-share-left">
+          <text>王龙阿萨德</text>
+          <text>挖到阿萨德吧</text>
+        </view>
+        <view class="details-share-right">
+          <icon class="iconfont icon-fenxiang"></icon>
+          <text>分享</text>
+        </view>
+    </view>
+    <view class="details-price">
+      <text>￥</text>
+      <text>118-159</text>
+    </view>
+    <view class="details-express">
+      <text>快递：</text>
+      <text>免运费</text>
+      <text>已拼118笔</text>
+    </view>
+  </view>
+  <!-- 分享结束 -->
+  <!-- 优惠卷开始-->
+  <view class="discounts">
+    <view class="discounts-left">
+      <view class="discounts-left-lis">
+        <view>优惠券</view>
+        <text>10元店铺优惠券</text>
+      </view>
+      <view class='discounts-left-lis'>
+        <view>优惠券</view>
+        <text>20元店铺优惠券</text>
+      </view>
+    </view>
+    <view class='discounts-right'>
+      <icon class="iconfont icon-icon"></icon>
+    </view>
+  </view>
+
+
+  <!-- 优惠卷结束-->
+</view>
+<!-- 7天无理由退货-->
+<view class="back">
+ <view class="group">
+    <block wx:for="{{iconColor}}">
+      <icon type="success" size="20" color="{{item}}" style='position:relative;top:10rpx;margin-right:10rpx;'/>
+    </block>
+    <text>7天无理由退货</text>
+    <text>·</text>
+    <text>48小时发货</text>
+    <text>·</text>
+    <text>假一赔十</text>
+    <text>·</text>
+    <text>全场包邮</text>
+  </view>
+  <view class="discounts-right">
+    <icon class="iconfont icon-icon"></icon>
+  </view>
+</view>
+<!-- 7天无理由退货-->
+<!-- 拼单开始-->
+<view class='share'>
+  <view class="share-title">2人在拼单，可直接参与</view>
+  <view class='share-text'>
+    <view class="share-right">
+      <image></image>
+      <text>Lorem</text> 
+      <text style='padding-left:20rpx;'>lpsum</text>
+    </view>
+    <view class="share-right-text">
+      <view>
+        <text>差3人拼成</text>
+        <text>剩余<text>23:23:34</text>结束</text>
+      </view>
+     <view class='share-btn'>去拼单</view>
+    </view>
+  </view>
+  <!-- 拼单遮罩-->
+    <view class="shade">
+      <image></image>
+      <text>Lorem</text>
+      <text>lpsum</text>
+      <text>24分钟前拼单成功</text>
+    </view>
+  <!-- 拼单遮罩-->
+</view>
+<!-- 拼单结束-->
+<!-- 商品评价-->
+<view class="price">
+  <view class="price-title">
+    <view>商品评价(8823)</view>
+    <view>查看更多<icon class='iconfont icon-icon'></icon></view>
+  </view>
+  <view class="price-evaluate">
+    <text>便宜(126)</text>
+    <text>质量好(111)</text>
+    <text>软硬度好(52)</text>
+    <text>服务态度好(46)</text>
+    <text>枕着很舒服(46)</text>
+  </view>
+  <view class='price-list'>
+    <view class='price-title'>
+      <image></image>
+      <text>Lorem</text>
+      <text>lpsum</text>
+    </view>
+    <view class="price-centent">我万达开始的斯卡达速度快打打麻将艾迪康就肯定撒买单吧四大皆空大当家阿萨德大大萨达姆打不打卡上看见的肯定撒即可打卡时间段科技卡时间段喀什市进度款佳世达三级等</view>
+  </view>
+</view>
+<!-- 商品评价-->
+<!--查看更多 -->
+<view class="more">
+    <text>查看更多</text>
+    <icon class="iconfont icon-icon"></icon>
+</view>
+<!-- 查看更多-->
+<!-- 商品详情-->
+<view class="price-details">商品详情</view>
+<view class='price-list'>
+  <view class='price-list-lis'>
+    <image class='image1'></image>
+    <view class="price-list-lis-title">乳胶按摩枕头</view>
+    <view class="price-list-lis-img">
+      <image></image>
+      <text class="text">￥<text>288.</text>00</text>
+      <view class="btn">
+        <text>立即购买</text><icon class="iconfont icon-qianjin"></icon>
+      </view>
+    </view>
+  </view>
+
+  <view class='price-list-lis'>
+    <image class='image1'></image>
+    <view class="price-list-lis-title">乳胶按摩枕头</view>
+    <view class="price-list-lis-img">
+      <image></image>
+      <text class="text">￥<text>288.</text>00</text>
+      <view class="btn">
+        <text>立即购买</text><icon class="iconfont icon-qianjin"></icon>
+      </view>
+    </view>
+  </view>
+
+  <view class='price-list-lis'>
+    <image class='image1'></image>
+    <view class="price-list-lis-title">乳胶按摩枕头</view>
+    <view class="price-list-lis-img">
+      <image></image>
+      <text class="text">￥<text>288.</text>00</text>
+      <view class="btn">
+        <text>立即购买</text><icon class="iconfont icon-qianjin"></icon>
+      </view>
+    </view>
+  </view>
+</view>
+<!-- 商品详情-->
+
+<!-- 详情图片-->
+<image></image>
+<!--详情图片 -->
+
+<!-- 底部-->
+<view class="footer">
+  <view class="footer-list">
+    <view class="footer-list-lis">
+        <icon class='iconfont icon-shouye'></icon>
+        <text>首页</text>
+    </view>
+    <view class="footer-list-lis">
+        <icon class='iconfont icon-shoucang'></icon>
+        <text>收藏</text>
+    </view>
+    <view class="footer-list-lis">
+        <icon class='iconfont icon-kefu'></icon>
+        <text>客服</text>
+    </view>
+  </view>
+  <view class="footer-list-1">发起拼单</view>
+  <view class="footer-list-2" bindtap='isShow'>单独购买</view>
+  <van-popup show="{{ show }}" bind:close="onClose"></van-popup>
+  <van-popup show="{{ show }}" position="bottom" overlay="{{ false }}" bind:close="onClose">
+    <view class="footer-shop">
+      <image></image>
+      <view class="footer-shop-right">
+        <text>￥122-133</text>
+        <text>库存2343件</text>
+        <text>请选择 尺码</text>
+        <icon class="iconfont icon-guanbi1" bindtap='goIsshow'></icon>
+      </view> 
+      <view class="size">尺码</view>
+      <view class='list'>
+        <text>60*40cm</text>
+        <text>58*36cm</text>
+      </view>
+      <view class='size'>颜色</view>
+      <view class="list">
+        <text>白色</text>
+      </view>
+      <button class="btn">确定</button>
+      </view>
+      
+  </van-popup>
+  <!-- 添加购物车-->
+
+
+
+</view>
+<!-- 底部-->
+
+
+<!-- 最外成盒子 -->
+</view>

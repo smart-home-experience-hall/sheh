@@ -1,0 +1,108 @@
+<!--pages/offer/offer.wxml-->
+<view class='wrap'>
+  <view class='top'>
+    <view class="line"></view>
+    可用红包<text>4</text>个
+  </view>
+  <view class='list'>
+    <view class='left'>
+      <text class='price'>￥<text class='num'>5</text>购物券</text>
+      <text class='collect'>收藏+关注</text>
+    </view>
+    <view class='right'>
+      <text>立即使用</text>
+    </view>
+  </view>
+  <view class='list'>
+    <view class='left left-one'>
+      <text class='reduce'>满199立减</text>
+      <text class='price'>￥<text class='num'>20</text>购物券</text>
+    </view>
+    <view class='right'>
+      <text>立即使用</text>
+    </view>
+  </view>
+  <view class='list'>
+    <view class='left left-two'>
+      <text class='reduce'>满399立减</text>
+      <text class='price'>￥<text class='num'>50</text>购物券</text>
+    </view>
+    <view class='right'>
+      <text>立即使用</text>
+    </view>
+  </view>
+  <view class='list'>
+    <view class='left left-three'>
+      <text class='reduce'>满799立减</text>
+      <text class='price'>￥<text class='num'>100</text>购物券</text>
+    </view>
+    <view class='right'>
+      <text>立即使用</text>
+    </view>
+  </view>
+  <view class='footer'>
+    <text>没有更多了</text>
+    <image src='../image/empty.gif'></image>
+  </view>
+</view>
+<view class='offer'>
+  <view class='content'>
+      <text>领券中心</text>
+      <icon class='iconfont icon-youjiantou'></icon>
+    </view>
+    <view class='list'>
+      <view class='item'>
+         <view class='price'>
+          <text>￥<text class='priceNew'>50</text></text>
+          <text>无门槛</text>
+        </view>
+        <view class='text'>
+          <text>仅限店内元戈美妆专营店店内指定商品使用</text>
+          <text>2019.6.11-2019.6.13</text>
+        </view>
+        <view class='button'>
+          <text>立即使用</text>
+          <icon class='iconfont icon-youjiantou'></icon>
+        </view>
+      </view>
+      <view class='bottom'>
+        <image src='../image/1.jpg'/>
+        <text>【56.7元抢50000件，抢完恢复59.7元】抖音网红款逝水流年</text>
+      </view>
+    </view>
+    <view class='caption'>
+      <text>优惠券说明</text>
+    </view>
+  </view>
+<view class='offer'>
+  <view class='content'>
+    <view class='center'>
+      <icon class='iconfont icon-youhuiquan'></icon>
+      <text>领券中心</text>
+      <icon class='iconfont icon-youjiantou'></icon>
+    </view>
+    <view class='list'>
+      <view class='item'>
+         <view class='price'>
+          <text>￥<text class='priceNew'>50</text></text>
+          <text>无门槛</text>
+        </view>
+        <view class='text'>
+          <text>仅限店内元戈美妆专营店店内指定商品使用</text>
+          <text>2019.6.11-2019.6.13</text>
+        </view>
+        <view class='button'>
+          <text>立即使用</text>
+          <icon class='iconfont icon-youjiantou'></icon>
+        </view>
+      </view>
+      <view class='bottom'>
+        <image src='../image/1.jpg'/>
+        <text>【56.7元抢50000件，抢完恢复59.7元】抖音网红款逝水流年</text>
+      </view>
+    </view>
+    <view class='caption'>
+      <text>优惠券说明</text>
+    </view>
+  </view>
+</view>

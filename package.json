@@ -1,0 +1,22 @@
+{
+  "name": "more",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fourteam1/more.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fourteam1/more/issues"
+  },
+  "homepage": "https://github.com/fourteam1/more#readme",
+  "dependencies": {
+    "vant-weapp": "^0.5.14"
+  }
+}

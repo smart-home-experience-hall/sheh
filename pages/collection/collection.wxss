@@ -1,0 +1,54 @@
+
+/* pages/collection/collection.wxss */
+.collection{
+  padding: 20rpx 30rpx 0;
+  box-sizing: border-box;
+}
+.collection .list{
+  display: flex;
+  height: 259rpx;
+  box-shadow: 0rpx 0rpx 10rpx 0rpx #ccc;
+  padding: 20rpx 0 40rpx 14rpx;
+  box-sizing: border-box;
+}
+.collection .list image{
+  width: 192rpx;
+  height: 199rpx;
+  margin-right: 16rpx;
+  border-radius: 8rpx;
+}
+.collection .list .text{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start; 
+}
+.collection .list .text .title{
+  font-size: 26rpx;
+}
+.collection .list .text .reduction{
+  color: #ff3f3f;
+  font-size: 18rpx; 
+  margin-top: 10rpx;
+}
+.collection .list .text .price{
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+  width: 90%;
+  margin-top: 58rpx;
+}
+.collection .list .text .price .nPrice{
+  color: #ff3f3f;
+  font-size: 24rpx;
+  font-weight: 600;
+}
+.collection .list .text .price .nPrice text{
+  font-size: 36rpx;
+}
+.collection .list .text .price .already{
+  color: #b9b9b9;
+  font-size: 22rpx;
+  margin-top: 26rpx;
+}

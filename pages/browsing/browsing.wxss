@@ -1,0 +1,84 @@
+
+.browsing{
+  width: 100vw;
+  height: 100vh;
+  background: #f4f4f4;
+}
+.browsing .content{
+  overflow: hidden;
+}
+.browsing .content .list{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 243rpx;
+  padding: 0 41rpx;
+  margin-top: 31rpx;
+  box-sizing: border-box;
+  background: #fff;
+}
+.browsing .content .list image{
+  width: 218rpx;
+  height: 209rpx;
+  margin-right: 29rpx;
+  border-radius: 8rpx;
+}
+.browsing .content .list .text{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-content: center;
+}
+.browsing .content .list .text .title{
+  width: 416rpx;
+  height: 80rpx;
+  font-size: 26rpx;
+  line-height: 42rpx;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  text-overflow: ellipsis; 
+}
+.browsing .content .list .text .price{
+  color: #ff3f3f;
+  font-size: 24rpx;
+  line-height: 26rpx;
+  padding-top: 69rpx;
+  box-sizing: border-box;
+}
+.browsing .content .list .text .price .nPrice{
+  font-size: 36rpx;
+  font-weight: 700;
+}
+.browsing .content .list .text .already{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 22rpx;
+  color: #9c9f9e;
+  font-size: 22rpx;
+  margin-top: 15rpx;
+}
+.footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100rpx;
+  padding: 150rpx 0;
+  box-sizing: border-box;
+}
+.footer text{
+  color: #bacdc3;
+  font-size: 22rpx;
+  line-height: 42rpx;
+}
+.footer image{
+  width: 76rpx;
+  height: 46rpx;
+  opacity: 0.3;
+	background: #397755;
+}

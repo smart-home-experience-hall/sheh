@@ -1,0 +1,57 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/new/new",
+    "pages/shop/shop",
+    "pages/mine/mine",
+    "pages/indent/indent",
+    "pages/offer/offer",
+    "pages/browsing/browsing",
+    "pages/collection/collection",
+    "pages/refund/refund",
+    "pages/details/details",
+    "pages/order/order",
+    "pages/address/address"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#1ca95e",
+    "navigationBarTitleText": "拼多多",
+    "navigationBarTextStyle": "white",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "pages/image/home.png",
+        "selectedIconPath": "pages/image/home.png"
+      },
+      {
+        "pagePath": "pages/new/new",
+        "text": "新品",
+        "iconPath": "pages/image/new.png",
+        "selectedIconPath": "pages/image/new.png"
+      },
+      {
+        "pagePath": "pages/shop/shop",
+        "text": "购物车",
+        "iconPath": "pages/image/shop.png",
+        "selectedIconPath": "pages/image/shop.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的",
+        "iconPath": "pages/image/mine.png",
+        "selectedIconPath": "pages/image/mine.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json",
+  "usingComponents": {
+    "van-icon": "miniprogram_npm/vant-weapp/icon/index",
+    "van-dialog": "vant-weapp/dialog/index"
+  }
+}

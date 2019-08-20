@@ -1,0 +1,56 @@
+<!-- 购物车 -->
+<view class='shop'>
+  <view class='shop-box'>
+    <!-- 购物车是空的时候 -->
+    <view class='shop-empty' wx:if="{{!data}}">
+      <view>
+        <image src='../image/shop.jpg'></image>
+        <text class='empty'>购物车是空的~</text>
+        <button class='btn'>去逛逛</button>
+      </view>
+    </view>
+    <!-- 购物车有东西的时候 -->
+    <view class='shop-Valued' wx:else>
+      <view class='shop-item' wx:for="{{data}}" wx:key="{{index}}" data-index="{{index}}">
+        <!-- 是否选中 -->
+        <icon class="{{!item.check ? 'iconfont icon-xuanzhongyuandian' : 'iconfont icon-xuanzhong-copy'}}" bindtap='check' data-index="{{index}}"></icon>
+        <!-- 图片 -->
+        <image src='{{item.image_url}}'></image>
+        <!-- 详细信息 -->
+        <view class='item-content'>
+          <text class='goods_name'>{{item.goods_name}}</text>
+          <text class='short_name'>{{item.short_name}}</text>
+          <text class='market_price'>￥{{item.market_price}}</text>
+        </view>
+        <!-- 商品数量 -->
+        <view class='Products' wx:if="{{!item.check}}">
+          <view class='number'>
+            <!-- 商品+1 -->
+            <view class='add' bindtap="add" data-index="{{index}}">+</view>
+            <input bindinput="bindKeyInput" placeholder="{{item.count}}" disabled="true" />
+            <!-- 商品-1 -->
+            <view class='remove' bindtap="cutBack" data-index="{{index}}">-</view>
+          </view>
+        </view>
+        <!-- 删除商品 -->
+        <view class='delete' wx:if="{{item.check}}" bindtap="remove" data-index="{{index}}">
+          <icon class="iconfont icon-shanchu"></icon>
+          <text class='text'>删除</text>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class='shopping'>
+    <view class='shoppingBottom' wx:if="{{data}}">
+      <view class='shoppingLeft'>
+        <!-- 全选 -->
+        <icon class='selectAll' class="{{!check ? 'iconfont icon-xuanzhongyuandian' : 'iconfont icon-xuanzhong-copy'}}" bindtap='All' data-index="{{index}}"></icon>
+        <text class='text'>全选</text>
+      </view>
+      <view class='shoppingRight'>
+        <text class='TotalCost'>￥{{TotalCost}}</text>
+        <button class='Settlement' bindtap="Settlement">去结算</button>
+      </view>
+    </view>
+  </view>
+</view>

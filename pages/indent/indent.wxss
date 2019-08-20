@@ -1,0 +1,106 @@
+/* pages/indent/indent.wxss */
+.wrap{
+  width: 100%;
+}
+.wrap .list{
+  display: flex;
+  flex-direction: column;
+  height: 420rpx;
+}
+.wrap .list .indent{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60rpx;
+  font-size: 24rpx;
+  color: #8d8d8d;
+  border-top: 2rpx solid #ccc;
+  padding: 20rpx;
+  box-sizing: border-box; 
+}
+.wrap .list .indent text:nth-of-type(2){
+  color: #24ab63;
+}
+.wrap .list .news{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 206rpx;
+  padding: 20rpx;
+  box-sizing: border-box;
+  background: #f7f7f7;
+}
+.wrap .list .news image{
+  width: 160rpx;
+  height: 160rpx;
+  margin-right: 40rpx;
+}
+.wrap .list .news .news-box{
+  display: flex;
+  flex-direction: column;
+  width: 378rpx;
+}
+.wrap .list .news .news-box .name{
+  font-size: 26rpx;
+	color: #383a3a;
+}
+.wrap .list .news .news-box .composition,.wrap .list .news .price-box .count{
+  font-size: 22rpx;
+	color: #bebebe;
+  padding-top: 32rpx;
+  box-sizing: border-box;
+}
+.wrap .list .news .price-box{
+  display: flex;
+  flex-direction: column;
+  justify-content: ss;
+  align-items: flex-end;
+}
+.wrap .list .news .price-box .price{
+  font-size: 30rpx;
+	color: #dc3025;
+  font-weight: bold;
+}
+.wrap .list .total{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 80rpx;
+  line-height: 80rpx;
+  font-size: 24rpx;
+	color: #8b8b8b;
+  border-bottom: 2rpx solid #eee;
+  padding-right: 20rpx;
+  box-sizing: border-box;
+}
+.wrap .list .total text{
+  color: #dc3025;
+}
+.wrap .list .operate{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100rpx;
+  background: #fff;
+  padding: 20rpx 20rpx 20rpx 0; 
+  box-sizing: border-box;
+}
+.wrap .list .operate text{
+  width: 144rpx;
+  height: 56rpx;
+  font-size: 30rpx;
+  color: #aaa8a8;
+  line-height: 56rpx;
+  text-align: center;
+  border-radius: 28rpx;
+  border: 2rpx solid #ccc;
+}
+.wrap .list .operate text.remove{
+  margin-right: 20rpx;
+}
+.wrap .list .operate text.speak{
+  color: #1ca95e;
+  border: 2rpx solid #1ca95e;
+ 
+}
+

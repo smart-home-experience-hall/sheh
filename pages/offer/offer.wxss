@@ -1,0 +1,226 @@
+.wrap{
+  width: 100%;
+  height: 100%;
+  padding: 38rpx; 
+  box-sizing: border-box;
+  background: #f7f7f7;
+}
+.top{
+  display: flex;
+  height: 60rpx;
+  line-height: 60rpx;
+  color: #333;
+  font-size: 32rpx;
+  font-weight: 700;
+  margin-bottom: 30rpx;
+}
+.top .line{
+  width: 6rpx;
+  height: 54rpx;
+  background: #f75f6a;
+  margin-right: 28rpx;
+}
+.top text{
+  color: #f75f6a;
+}
+.list{
+  display: flex;
+  width: 678rpx;
+  height: 208rpx;
+  background: #fff;
+  box-shadow: 20rpx 10rpx 50rpx rgba(0,0,0,0.1);
+  margin-bottom: 30rpx;
+}
+.left{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 428rpx;
+  height: 100%;
+  background: -webkit-gradient(linear,left top,right bottom,from(#ff4091), to(#ff9e29));
+}
+.left .price{
+  font-size: 32rpx;
+  color: #fff;
+  line-height: 48rpx; 
+  text-align: center;
+}
+.left .price .num{
+  font-size: 44rpx;
+  margin-right: 20rpx;
+  font-weight: bold;
+}
+.left .collect{
+  font-size: 46rpx;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+}
+.right{
+  width: 242rpx;
+  height: 100%;
+}
+.right text{
+  display: block;
+  width: 190rpx;
+  height: 54rpx;
+  background: #fe002f;
+  border-radius: 10rpx;
+  text-align: center;
+  line-height: 54rpx;
+  color: #fff;
+  font-size: 36rpx;
+  margin-top: 77rpx;
+  margin-left: 30rpx;
+}
+.reduce{
+  text-align: left;
+  font-size: 36rpx;
+  padding-left: 30rpx;
+  color: #fff; 
+}
+.left-one{
+  background: -webkit-gradient(linear,left top,right bottom,from(#fa7a25), to(#f42c3c));
+}
+.left-two{
+  background: -webkit-gradient(linear,left top,right bottom,from(#ffb100), to(#ffc406));
+}
+.left-three{
+  background: -webkit-gradient(linear,left top,right bottom,from(#febf02), to(#fe0036));
+}
+.footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100rpx;
+  padding: 150rpx 0;
+  box-sizing: border-box;
+}
+.footer text{
+  color: #bacdc3;
+  font-size: 30rpx;
+  line-height: 42rpx;
+}
+.footer image{
+  width: 152rpx;
+  height: 84rpx;
+  opacity: 0.3;
+	background: #397755;
+}
+.offer{
+  width: 100%;
+  background: #f4f4f4;
+}
+.offer .content{
+  padding: 20rpx 24rpx;
+  box-sizing: border-box;
+}
+.offer .content .center{
+  height: 80rpx;
+  line-height: 80rpx;
+  font-size: 30rpx;
+  padding: 0rpx 16rpx;
+  margin-bottom: 20rpx;
+  box-sizing: border-box;
+  border-radius: 10rpx;
+  background: #fff;
+}
+.offer .content .center text{
+  margin-left: 20rpx;
+}
+.offer .content .center icon{
+  font-size: 36rpx;
+}
+.offer .content .center icon:nth-of-type(1){
+  color: rgb(241, 12, 12);
+}
+.offer .content .center icon:nth-of-type(2){
+  float: right;
+}
+.offer .content .list{
+  background: #ededed;
+}
+.offer .content .list .item{
+  display: flex;
+  height: 180rpx;
+  border-radius: 10rpx;
+  padding: 0 20rpx;
+  box-sizing: border-box;
+  background: #fff;
+}
+.offer .content .list .item .price{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 150rpx;
+  font-size: 30rpx;
+  color: orange;
+}
+.offer .content .list .item .price .priceNew{
+  font-size: 50rpx;
+  font-weight: bold;
+}
+.offer .content .list .item .text{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 360rpx;
+  font-size: 30rpx;
+}
+.offer .content .list .item .text text:nth-of-type(2){
+  color: #ccc;
+  margin-top: 10rpx;
+}
+.offer .content .list .item .button{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 155rpx;
+}
+.offer .content .list .item .button text{
+  font-size: 24rpx;
+  color: #fff;
+  padding: 10rpx;
+  margin-top: 50rpx;
+  box-sizing: border-box;
+  border-radius: 8rpx;
+  background: orange;
+}
+.offer .content .list .item .button icon{
+  font-size: 40rpx;
+  margin-top: 10rpx;
+  transform: rotate(90deg);
+}
+.offer .content .list .bottom{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 60rpx;
+  padding: 0 20rpx;
+  box-sizing: border-box;
+}
+.offer .content .list .bottom image{
+  width: 30rpx;
+  height: 30rpx;
+}
+.offer .content .list .bottom text{
+  width: 88%;
+  font-size: 24rpx;
+  color: rgb(180, 178, 178);
+  margin-left: 30rpx;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.offer .content .caption{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30rpx;
+  color: #a4a4a4;
+  padding: 110rpx 0;
+  box-sizing: border-box;
+}

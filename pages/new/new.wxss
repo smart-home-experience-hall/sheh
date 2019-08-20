@@ -1,0 +1,44 @@
+/* pages/new/new.wxss */ 
+.new .new_bg{
+  width: 100%;
+  height: 480rpx;
+}
+.new .new_bg image{
+  width: 100%;
+  height: 100%;
+}
+.new_list{
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width:100%;
+  background:#fff;
+  padding:0 10rpx;
+  box-sizing: border-box; 
+}
+.lis{
+  width:49%;
+  height:520rpx;
+  border:1px solid  #888888;
+  margin-bottom:10rpx;
+}
+.lis:nth-child(even){
+  box-sizing: border-box;
+}
+.lis image{
+  width:100%;
+  height:75%;
+}
+.new_text1{
+  height:35rpx;
+  overflow:hidden;
+  padding:0 10rpx;
+  font-size:28rpx;
+}
+.new_text_2{
+  color:#ccc;
+}
+.new_text_3{
+  color:red;
+  margin-top:2rpx;
+}
